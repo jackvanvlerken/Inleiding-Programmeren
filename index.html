@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot machine</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1 class="center">Slot machine!</h1>
+    <div class="center lever">
+        <a id="lever" class="btn">Lever</a>
+    </div>
+    <table class="center">
+        <tr>
+            <td>
+                <span id="item1" class="slotnumber">-</span>
+            </td>
+            <td>
+                <span id="item2" class="slotnumber">-</span>
+            </td>
+            <td>
+                <span id="item3" class="slotnumber">-</span>
+            </td>  
+        </tr>
+    </table>
+    <div id="message_win" class="center message">
+        You Won!
+    </div>
+    <div id="message_lose" class="center message">
+        Gameover!
+    </div>
+
+    <h2>You have <span id="points"></span> points.</h2>
+
+    <div class="container">
+        <input id=punt100 name="punten" checked value="100" type="radio"></input>
+        <label id=label1 for="punt100">100</label>
+        <input id=punt200 name="punten" value="200" type="radio"></input>
+        <label id=label2 for="punt200">200</label>
+        <input id=punt300 name="punten" value="300" type="radio"></input>
+        <label id=label3 for="punt300">300</label>
+    </div>
+
+    <audio id="audioWin" src="audio/win.mp3"></audio>
+    <audio id="audioLose" src="audio/lose.mp3"></audio>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
